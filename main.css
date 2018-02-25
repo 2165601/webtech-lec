@@ -21,3 +21,16 @@
   width: 40%;
   text-align: center;
 }
+button{
+	background-color: gray;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+	background-color: gray;
+	color: black;
+	}
