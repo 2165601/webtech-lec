@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CourseProject</title>
+    <meta charset="utf-8">
+</head>
+<body id="httppage">
+  <div class="main">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html">WWW</a></li>
+            <li><a href="http.html">HTTP</a></li>
+            <li><a href="html.html">HTML</a></li>
+          </ul>
+        </nav>
+      </div>
+
+            <div id="title">
+                HyperText Transfer Protocol
+            </div>
+        </div>
+    </header>
+  </div>
+    <div class="body2">
+        <div class="main">
+            <section id="content">
+                <div class="box1">
+                  <div class="wrapper">
+                    <article class="col1">
+                        <div id="topic1">
+                        <h2> HTTP Fundamentals </h2>
+
+                          <h5>HTTP runs on top of TCP/IP</h5>  
+
+                        <p>
+                            <p>Using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS) </p>
+                            <p>IANA, ICANN</p>
+                        </p>
+
+                          <h5>HTTP is based on a client server architecture</h5>  
+
+                        <p>
+                            <p>Client (aka User Agents) i.e., web browsers, web crawlers, and other end user tools and applications</p>
+                            <p>Servers i.e., origin servers, proxy servers, gateway</p>
+                        </p>
+
+                          <h5>HTTP uses a request-response standard protocol</h5>  
+
+                        <p>
+                            <p>The client sends an HTTP request message to the server</p>
+                            <p>The server processes the request and replies with an HTTP response message</p>
+                        </p>
+
+                          <h5>HTTP is a stateless communications protocol</h5>  
+
+                        <p>
+                            <p>Servers do not keep information about client in between requests</p>
+                            <p>Serve and Forget</p>
+                        </p>    
+
+                          <h5>HTTP provides aupport for other funtionalities</h5>  
+                            
+                        <p>    
+                            <ol type="1">
+                                <li> Cache control </li>
+                                <li> Content media type (MIME) specification </li>
+                                <li> Language and character set specification </li>
+                                <li> Content/Transfer coding </li>
+                                <li> Client server protocol negotiation </li>
+                                <li> Persistent connection </li>
+                                <li> Request pipelining </li>
+                                <li> Authentication/Authorization </li>
+                            </ol>
+                        </div>
+                          
+                        </p>
+                      
+                        <div id="topic2">
+                        <h2> HTTP Resource Addressing </h2>
+                        <h6>Scheme</h6>
+                           	<p>
+							Consisting of a sequence of characters beginning with a letter and followed by any combination of letters, digits, plus (+), period (.), or hyphen (-). Although schemes are case-insensitive, the canonical form is lowercase and documents that specify schemes must do so with lowercase letters. It is followed by a colon (:).
+							</p>
+                        <p><h6>Authority</h6>  
+                           	<p>An authority part which consist of an optional authentication section of a user name and password, separated by a colon, followed by an at symbol (@). However this has already been deprecated. 
+                        </p>
+                          <h6>Host</h6>  
+                           	<p>Domain name (resolve to an IP address using DNS) of the server where the resource resides or will be created. 
+                        </p>
+                          <h6>Port</h6>  
+                           	<p> An endpoint of communication in an operating system. Default port of HTTP is 80 and HTTPS is 443.
+                        </p>
+                          <h6>Path</h6>  
+                           	<p>Path, which contains data, usually organized in hierarchical form, that appears as a sequence of segments separated by slashes. Such a sequence may resemble or map exactly to a file system path, but does not always imply a relation to one.
+                        </p>
+                          <h6>Query</h6>  
+                           	<p>An optional query, separated from the preceding part by a question mark (?), containing a query string of non-hierarchical data. Typically provided as key value pairs with ampresand ('&') separators between key value pairs. 
+                        </p>
+                          <h6>Fragment Identifier</h6>  
+                           	<p>An optional fragment, separated from the preceding part by a hash (#) and is identified by a key
+                        </p>
+                          <h6>Example</h6>  
+                        <div class = "panel">
+                           Given  
+		                         <p>
+		                         <h5>http://usr:pwd@www.test.org:80/info/index.html?id=123#add</h5></p>
+                            Anser  
+                         <p>
+		                        <ul>
+		                        <li>http:// - <b> Scheme </b></li>
+		                        <li>usr:pwd@ - <b> Authority </b></li>
+		                        <li>www.test.org - <b> Host </b></li>
+		                        <li>:80 - <b> Port </b></li>
+		                        <li>/info/index.html - <b> Path </b></li>
+		                        <li>?id=123 - <b> Query </b></li>
+		                        <li>#add - <b> Fragment Identifier </b></li>
+		                        </ul>
+		                  </p>
+		                  </div>
+</p>
+                        <div id="topic3">
+                        <h2> HTTP Request Methods </h2>
+
+                                  <h6>GET</h6>  
+                                    <p> requests a representation of the specified resource. Requests using GET should only retrieve data.</p>
+                                  <h6>HEAD</h6>  
+                                     <p> asks for a response identical to that of a GET request, but without the response body.</p>
+								  <h6>POST</h6>  
+                                     <p> used to submit an entity to the specified resource, often causing a change in state or side effects on the server.</p>
+                                  <h6>PUT</h6>  
+                                     <p> replaces all current representations of the target resource with the request payload.</p>
+                                  <h6>DELETE</h6>  
+                                     <p>deletes the specified resource.</p>
+                                  <h6>CONNECT</h6>  
+                                     <p> establishes a tunnel to the server identified by the target resource.</p>
+                                  <h6>OPTIONS</h6>  
+                                     <p> used to describe the communication options for the target resource.</p>
+                                  <h6>TRACE</h6>  
+                                     <p> performs a message loop-back test along the path to the target resource.</p>
+                                  <h6>PATCH</h6>  
+                                     <p> used to apply partial modifications to a resource. </p>
+                           
+
+                                 <p>Reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</p>                   
+   
+                        </div>
+
+                        <div id="topic4">
+                        <h2> General Header Fields  </h2>
+                          
+                            <h6>Cache-Control</h6>  
+                                     <p> used to specify directives that must be obeyed by all caching mechanisms along the request/response chain. </p>
+                              <h6>Connection</h6>  
+                                     <p> allows the sender to specify options that are desired for that particular connection and must not be communicated by proxies over further connections. </p>
+                             <h6>Date</h6>  
+                                     <p> represents the date and time at which the message was originated. </p>
+                             <h6>Pragma</h6>  
+                                     <p> used to include implementation- specific directives that might apply to any recipient along the request/response chain.</p>
+                             <h6>Trailer</h6>  
+                                     <p> indicates that the given set of header fields is present in the trailer of a message encoded with chunked transfer-coding. </p>
+                             <h6>Transfer-Encoding</h6>  
+                                     <p> indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient.</p>
+                             <h6>Upgrade</h6>  
+                                     <p> allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols. </p>
+                             <h6>Via</h6>  
+                                     <p> must be used by gateways and proxies to indicate the intermediate protocols and recipients between the user agent and the server on requests, and between the origin server and the client on responses.</p>
+                             <h6>Warning</h6>  
+                                     <p> used to carry additional information about the status or transformation of a message which might not be reflected in the message. </p>
+
+                           <p>Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</p>                             
+                                
+                        </div>
+
+                        <div id="topic5">
+                        <h2> Request Header Fields </h2>
+                              <h6>Accept</h6>  
+                                     <p> used to specify certain media types which are acceptable for the response. </p>
+                              <h6>Accept-Charset</h6>  
+                                     <p> used to indicate what character sets are acceptable for the response. </p>
+                              <h6>Accept-Encoding</h6>  
+                                     <p> similar to Accept, but restricts the content-codings that are acceptable in the response. </p>
+                              <h6>Accept-Language</h6>  
+                                     <p> similar to Accept, but restricts the set of natural languages that are preferred as a response to the request. </p>
+                              <h6>Authorization</h6>  
+                                     <p> consists of credentials containing the authentication information of the user agent for the realm of the resource being requested.</p>
+                              <h6>Expect</h6>  
+                                     <p> used to indicate that particular server behaviors are required by the client. </p>
+                              <h6>From</h6>  
+                                     <p> contains an Internet e-mail address for the human user who controls the requesting user agent. </p>
+                              <h6>Host</h6>  
+                                     <p> specifies the Internet host and port number of the resource being requested, as obtained from the original URI given by the user or referring resource. </p>
+                              <h6>If-Match</h6>  
+                                     <p>  used with a method to make it conditional. </p>
+                              <h6>If-Modified-Since </h6>  
+                                     <p> used with a method to make it conditional: if the requested variant has not been modified since the time specified in this field, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body.</p>
+                              <h6>If-None-Match</h6>  
+                                     <p> used with a method to make it conditional. </p>
+                            <p>Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</p>                               
+                        </div>
+
+                        <div id="topic6">
+                        <h2> Response Header Fields </h2>
+                          <h6>Accept-Ranges</h6>  
+                                     <p> allows the server to indicate its acceptance of range requests for a resource. </p>
+                              <h6>Age</h6>  
+                                     <p> conveys the sender's estimate of the amount of time since the response was generated at the origin server.</p>
+                              <h6>ETag</h6>  
+                                     <p> provides the current value of the entity tag for the requested variant. </p>
+                              <h6>Location</h6>  
+                                     <p> used to redirect the recipient to a location other than the Request-URI for completion of the request or identification of a new resource. </p>
+                              <h6>Proxy-Authenticate</h6>  
+                                     <p> consists of a challenge that indicates the authentication scheme and parameters applicable to the proxy for this Request-URI.</p>
+                              <h6>Retry-After</h6>  
+                                     <p> used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client.</p>
+                              <h6>Server</h6>  
+                                     <p> indicates what extension transfer-codings it is willing to accept in the response and whether or not it is willing to accept trailer fields in a chunked transfer-coding. </p>
+                              <h6>Vary</h6>  
+                                     <p> indicates the set of request-header fields that fully determines, while the response is fresh, whether a cache is permitted to use the response to reply to a subsequent request without revalidation.</p>
+                              <h6>WWW-Authenticate</h6>  
+                                     <p>  consists of at least one challenge that indicates the authentication scheme(s) and parameters applicable to the Request-URI. </p>
+
+                            <p>Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</p>                      
+                        </div>
+
+                        <div id="topic7">
+                        <h2> Entity Header Fields </h2>
+                          <h6>Allow</h6>  
+                                     <p> lists the set of methods supported by the resource identified by the Request-URI. </p>
+                              <h6>Content-Encoding</h6>  
+                                     <p> used as a modifier to the media-type.</p>
+                              <h6>Content-Language </h6>  
+                                     <p> describes the natural language(s) of the intended audience for the enclosed entity.</p>     
+                              <h6>Content-Length </h6>  
+                                     <p> indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent had the request been a GET. </p>
+                               <h6>Content-Location </h6>  
+                                     <p> may be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource's URI.</p>
+                              <h6>Content-MD5</h6>  
+                                     <p> is an MD5 digest of the entity-body for the purpose of providing an end-to-end message integrity check (MIC) of the entity-body.</p>
+                              <h6>Content-Range</h6>  
+                                     <p> is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</p>
+                              <h6>Content-Type</h6>  
+                                     <p>indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET. </p>
+                              <h6>Expires</h6>  
+                                     <p> Gives the date/time after which the response is considered stale.</p>
+                              <h6>Last Modified</h6>  
+                                     <p>  indicates the date and time at which the origin server believes the variant was last modified.</p>
+                        
+                                <p>Reference: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html</p>  
+                        </div>
+
+                        <div id="topic8">
+                            <h2> HTTP Status Codes </h2>
+ 
+                                  <h6> Informational (1xx) </h6>  
+                                <p>
+                                 <ul>
+                                 	<li> 100 Continue </li>
+                                 	<li> 101 Switching Protocols </li>
+                                 </ul>
+                                 </p>
+
+                                   <h6> Success (2xx) </h6>  
+                                <p>
+                                 <ul>
+                                 	<li> 200 OK </li>
+                                 	<li> 202 Accepted </li>
+                                 	<li> 203 Non-Authoritative Information </li>
+                                 	<li> 204 No Content </li>
+                                 	<li> 205 Reset Content </li>
+                                 	<li> 206 Partial Content </li>
+                                 </ul>
+                                 </p>
+
+                                    <h6> Redirection (3xx) </h6>  
+                                 <p>
+                                 <ul> 
+                                 	<li> 300 Multiple Choices </li>
+                                 	<li> 301 Moved Permanently </li>
+                                 	<li> 302 Found </li>
+                                 	<li> 303 See Other </li>
+                                 	<li> 304 Not Modified </li>
+                                	<li> 305 Use Proxy </li>
+                                 	<li> 306 (Unused) </li>
+                                 	<li> 307 Temporary Redirect </li>
+                                 </ul>
+                                 </p>
+
+                                    <h6> Client Error (4xx) </h6>  
+                                <p>
+                                 <ul>
+                                 	<li> 400 Bad Request </li>
+                                 	<li> 401 Unauthorized </li>
+                                 	<li> 402 Payment Required </li>
+                                 	<li> 403 Forbidden </li>
+                                 	<li> 404 Not Found </li>
+                                	<li> 405 Method not Allowed </li>
+                                 	<li> 406 Not Acceptable </li>
+                                 	<li> 407 Proxy Authentication Required </li>
+                                 	<li> 408 Request Timeout </li>
+                                 	<li> 409 Conflict </li>
+                                 	<li> 410 Gone </li>
+                                 	<li> 411 Length Required </li>
+                                 	<li> 412 Precondition Failed </li>
+                                 	<li> 413 Request Entity Too Large </li>
+                                 	<li> 414 Request-URI Too Long </li>
+                                 	<li> 415 Unsupported Media Type </li>
+                                 	<li> 416 Request Range Not Satisfiable </li>
+                                 	<li> 417 Expectation Failed </li>
+                                 	<li> 426 Upgrade Required </li>
+                                 </ul>
+                                </p>
+
+                                   <h6> Server Error (5xx) </h6>  
+                                <p>
+                                 <ul>
+                                 	<li> 500 Internal Server Error </li>
+                                 	<li> 501 Not Implemented </li>
+                                 	<li> 502 Bad Gateway </li>
+                                 	<li> 503 Service Unavailable </li>
+                                 	<li> 504 Gateway Timeout </li>
+                                 	<li> 505 HTTP Version Not Supported </li>
+                                </ul>
+                                </p>    
+							</div>
+                    </article>
+                  </div>
+                </div>
+            </section>
+    </div>
+    </div>
+
+</body>
+</html>
+
