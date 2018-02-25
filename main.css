@@ -1,0 +1,23 @@
+.mySlides{
+	display:none;
+	width: 100%;
+	max-width:100%
+}
+.caption{
+  color: black;
+  font-size: 50px;
+  padding: 0px ;
+  position: absolute;
+  bottom: 30px;
+  width: 40%;
+  text-align: center;
+}
+.captionHTTP{
+  color: white;
+  font-size: 50px;
+  padding: 0px ;
+  position: absolute;
+  bottom: 30px;
+  width: 40%;
+  text-align: center;
+}
