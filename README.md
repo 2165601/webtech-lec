@@ -17,7 +17,8 @@ Instructions
      website which is the main.html 
 	
 Authors
-	- Cruz, Julie Ann
+	
+  - Cruz, Julie Ann
   - Idos, Alec
   - Lositanio, Kyle
   - Sabado, Patrick
