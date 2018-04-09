@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>World Wide Web</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+<body>
+	<!-- Header Area -->
+	<div class="header">
+		<h1>Course Subject (Webtech 2018)</h1>
+		<i>Know more about the Web Technologies</i>
+	</div>
+
+	<div class="navbar">
+		<a href="w3content.html">WWW</a>
+		<a href="http.html">HTTP</a>
+		<a href="html.html">HTML</a>
+		<a href="css.html">CSS</a>
+		<a href="jscript.html">Java Script</a>
+		<a href="about.html" class="right">About</a>
+	</div>
+	<!-- Left side of the website -->
+	<div class="row">
+		<div class="side">
+		<h1>Tim Berners-Lee</h1>
+		<img src="images/Tim.png" style="height:450px;"><br>
+		<div class="box">
+			<p>- Computer Scientist</p>
+			<p>- Is the inventor of the World Wide Web and he created a new computer 
+			language called HTML (Hypertext Markup Language) 
+			which most web pages are written in. The first 
+			web page was available on 6 August 1991.</p>
+			<p>- Berners-Lee now leads the World Wide Web Consortium. 
+			That is an organization that looks after the World Wide Web. 
+			He is the author of the book Weaving the Web. He is a 
+			director of The Web Science Research Initiative (WSRI), 
+			and a member of the advisory board of the MIT Center for 
+			Collective Intelligence. In April 2009, he was elected as 
+			a member of the United States National Academy of Sciences, 
+			based in Washington, D.C. In 1999, Time Magazine named 
+			Berners-Lee one of the 100 Most Important People of the 
+			20th Century. In March 2000 he was awarded an honorary 
+			degree from the Open University as Doctor of the University.</p>
+			<p>- Invented it at CERN in 1989, jointly developed by the W3C and IETF.</p>
+	  </div>
+		</div>
+  <!-- Right side of the web side -->
+  <div class="main">
+      <h1>What is Hypertext Transfer Protocol?</h1>
+	  <img src="images/http.png" alt="World Wide Web">
+	  <br><br>
+	  <div class="box1">
+	  <p>HTTP(Hypertext Transfer Protocol) is an 
+	  application layer communication protocol used 
+	  to access resource (hypertext/ hypermedia) on the World Wide Web.</p>  
+	  </div>
+	  
+	  
+	  <h1>Vesions</h1>
+	  <div class="box1">
+	  <p>• HTTP 0.9 (1991) – not persistent connection “GET” method –initially text based.</p>
+	  <p>• HTTP 1.0 (RFC 1945 May 1996) - “POST & HEAD” method single connection, every request 1 connection.</p>
+	  <p>• HTTP 1.1 (RFC 2068 Jan 1997) (RFC 2616 Jan 1999) - 8 method was already added GET, DELETE, HEAD, TRACE, POST, CONNECT, PUT, OPTIONS</p>
+	  <p>• RFC (7230-7235 June 2014) - Re writing Protocol.</p>
+	  <p>• HTTP2 (RFC 7540 May 2015) - can already anticipate</p>
+&nbsp;  -HTTP is based on a client-server architecture typically runs on top TCP/IP using transmission control/ internet protocol. <br>
+ &nbsp; -Using TCP PORT 80 by default or TCP port 443 for HTTPS (HTPP OVER SSL/TLS</p>
+	  </div>
+	  <br>
+	  
+	  <h1>HTTP Fundamentals</h1>
+	  <div class="box1">
+	  <h3>HTTP runs on top of TCP/IP</h3>
+	  <p>• Using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS) </p>
+	  <p>• IANA, ICANN</p>
+	  </div>
+	  <br>
+	  
+	  <div class="box1">
+	  <h3>HTTP is based on a client server architecture</h3>
+	  <p>• Using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS) </p>
+	  <p>• IANA, ICANN</p>
+	  </div>
+	  <br>
+	  
+	  <div class="box1">
+	  <h3>HTTP uses a request-response standard protocol</h3>
+	  <p>• The client sends an HTTP request message to the server</p>
+	  <p>• The server processes the request and replies with an HTTP response message</p>
+	  </div>
+	  <br>
+	  
+	  <div class="box1">
+	  <h3>HTTP is a stateless communications protocol</h3>
+	  <p>• Servers do not keep information about client in between requests</p>
+	  <p>• Serve and Forget</p>
+	  </div>
+	  <br>
+	  
+	  <div class="box1">
+	  <h3>HTTP provides aupport for other funtionalities</h3>
+	  <ol>
+            <li> Cache control </li>
+			<li> Content media type (MIME) specification </li>
+            <li> Language and character set specification </li>
+			<li> Content/Transfer coding </li>
+            <li> Client server protocol negotiation </li>
+			<li> Persistent connection </li>
+			<li> Request pipelining </li>
+            <li> Authentication/Authorization </li>
+      </ol>
+	  </div>
+	  <br>
+	  
+	  <h1> HTTP Resource Addressing </h1>
+	  <div class="box1">
+	  <h3>Scheme</h3>
+	  <p>• Consisting of a sequence of characters beginning with a letter and followed by any combination of letters, digits, plus (+), period (.), or hyphen (-). Although schemes are case-insensitive, the canonical form is lowercase and documents that specify schemes must do so with lowercase letters. It is followed by a colon (:). </p>
+	  <h3>Autority</h3>
+	  <p>• An authority part which consist of an optional authentication section of a user name and password, separated by a colon, followed by an at symbol (@). However this has already been deprecated.</p>
+	  <h3>Host</h3>
+	  <p>• Domain name (resolve to an IP address using DNS) of the server where the resource resides or will be created.</p>
+	  <h3>Port</h3>
+	  <p>• An endpoint of communication in an operating system. Default port of HTTP is 80 and HTTPS is 443.</p>
+	  <h3>Path</h3>
+	  <p>• Path, which contains data, usually organized in hierarchical form, that appears as a sequence of segments separated by slashes. Such a sequence may resemble or map exactly to a file system path, but does not always imply a relation to one.</p>
+	  <h3>Query</h3>
+	  <p>• An optional query, separated from the preceding part by a question mark (?), containing a query string of non-hierarchical data. Typically provided as key value pairs with ampresand ('&') separators between key value pairs.</p>
+	  <h3>Fragment Identifier</h3>
+	  <p>• An optional fragment, separated from the preceding part by a hash (#) and is identified by a key</p>
+	  </div>
+	  <br>
+	  
+	  <h1> HTTP Request Method </h1>
+	  <div class="box1">
+	  <h3>GET</h3>
+	  <p>• requests a representation of the specified resource. Requests using GET should only retrieve data.</p>
+	  <h3>HEAD</h3>
+	  <p>• asks for a response identical to that of a GET request, but without the response body.</p>
+	  <h3>POST</h3>
+	  <p>• used to submit an entity to the specified resource, often causing a change in state or side effects on the server.</p>
+	  <h3>PUT</h3>
+	  <p>• replaces all current representations of the target resource with the request payload.</p>
+	  <h3>DELETE</h3>
+	  <p>• deletes the specified resource.</p>
+	  <h3>CONNENT</h3>
+	  <p>• establishes a tunnel to the server identified by the target resource.</p>
+	  <h3>OPTIONS</h3>
+	  <p>• used to describe the communication options for the target resource.</p>
+	  <h3>TRACE</h3>
+	  <p>• performs a message loop-back test along the path to the target resource.</p>
+	  <h3>PATCH</h3>
+	  <p>• used to apply partial modifications to a resource. </p>
+	  </div>
+	  <br>
+	  
+	  <h1> General Header Fields </h1>
+	  <div class="box1">
+	  <h3>CACHE-CONTROL</h3>
+	  <p>• used to specify directives that must be obeyed by all caching mechanisms along the request/response chain.</p>
+	  <h3>CONNENTION</h3>
+	  <p>• allows the sender to specify options that are desired for that particular connection and must not be communicated by proxies over further connections.</p>
+	  <h3>DATE</h3>
+	  <p>• represents the date and time at which the message was originated.</p>
+	  <h3>PRAGMA</h3>
+	  <p>• used to include implementation- specific directives that might apply to any recipient along the request/response chain.</p>
+	  <h3>TRAILER</h3>
+	  <p>• indicates that the given set of header fields is present in the trailer of a message encoded with chunked transfer-coding.</p>
+	  <h3>TRANSFER-ENCODING</h3>
+	  <p>• indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient.</p>
+	  <h3>UPGRADE</h3>
+	  <p>• allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols.</p>
+	  <h3>VIA</h3>
+	  <p>• must be used by gateways and proxies to indicate the intermediate protocols and recipients between the user agent and the server on requests, and between the origin server and the client on responses.</p>
+	  <h3>WARNING</h3>
+	  <p>• used to carry additional information about the status or transformation of a message which might not be reflected in the message. </p>
+	  </div>
+	  <br>
+	  
+	  <h1> Request Header Fields</h1>
+	  <div class="box1">
+	  <h3>ACCEPT</h3>
+	  <p>• used to specify certain media types which are acceptable for the response.</p>
+	  <h3>ACCEPT-CHARSET</h3>
+	  <p>• used to indicate what character sets are acceptable for the response</p>
+	  <h3>ACCEPT-ENCODING</h3>
+	  <p>• similar to Accept, but restricts the content-codings that are acceptable in the response.</p>
+	  <h3>ACCEPT-LANGUAGE</h3>
+	  <p>• similar to Accept, but restricts the set of natural languages that are preferred as a response to the request. </p>
+	  <h3>AUTHORIZATION</h3>
+	  <p>• consists of credentials containing the authentication information of the user agent for the realm of the resource being requested.</p>
+	  <h3>EXPECT</h3>
+	  <p>• used to indicate that particular server behaviors are required by the client.</p>
+	  <h3>FROM</h3>
+	  <p>• contains an Internet e-mail address for the human user who controls the requesting user agent.</p>
+	  <h3>HOST</h3>
+	  <p>• specifies the Internet host and port number of the resource being requested, as obtained from the original URI given by the user or referring resource.</p>
+	  <h3>IF-MATCH</h3>
+	  <p>• used with a method to make it conditional.</p>
+	  <h3>IF-MODIFIED-SINCE</h3>
+	  <p>• used with a method to make it conditional: if the requested variant has not been modified since the time specified in this field, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body.</p>
+	  <h3>IF-NONE-MATCH</h3>
+	  <p>• used with a method to make it conditional.</p>
+	  </div>
+	  <br>
+	  
+	  <h1> Response Header Fields </h1>
+	  <div class="box1">
+	  <h3>ACCEPT-RANGES</h3>
+	  <p>• allows the server to indicate its acceptance of range requests for a resource.</p>
+	  <h3>AGES</h3>
+	  <p>• conveys the sender's estimate of the amount of time since the response was generated at the origin server.</p>
+	  <h3>LOCATION</h3>
+	  <p>• used to redirect the recipient to a location other than the Request-URI for completion of the request or identification of a new resource.</p>
+	  <h3>PROXY-AUTHENTICATION</h3>
+	  <p>• consists of a challenge that indicates the authentication scheme and parameters applicable to the proxy for this Request-URI.</p>
+	  <h3>RETRY-AFTER</h3>
+	  <p>• used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client.</p>
+	  <h3>SERVER</h3>
+	  <p>• indicates what extension transfer-codings it is willing to accept in the response and whether or not it is willing to accept trailer fields in a chunked transfer-coding.</p>
+	  <h3>VARY</h3>
+	  <p>• indicates the set of request-header fields that fully determines, while the response is fresh, whether a cache is permitted to use the response to reply to a subsequent request without revalidation.</p>
+	  <h3> WWW-AUTHENTICATION</h3>
+	  <p>• consists of at least one challenge that indicates the authentication scheme(s) and parameters applicable to the Request-URI.</p>
+	  <h3> ELAG</h3>
+	  <p>• provides the current value of the entity tag for the requested variant.</p>
+	  </div>
+	  <br>
+	  
+	  <h1> Entity Header Fields </h1>
+	  <div class="box1">
+	  <h3>ALLOW</h3>
+	  <p>• lists the set of methods supported by the resource identified by the Request-URI.</p>
+	  <h3>CONTENT-ENCODING</h3>
+	  <p>• used as a modifier to the media-type.</p>
+	  <h3>CONTENT-LANGUAGE</h3>
+	  <p>• describes the natural language(s) of the intended audience for the enclosed entity.</p>
+	  <h3>CONTENT-LENGTH</h3>
+	  <p>• indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent had the request been a GET.</p>
+	  <h3>CONTENT-LOCATION</h3>
+	  <p>• may be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource's URI.</p>
+	  <h3>CONTENT-MID5</h3>
+	  <p>• is an MD5 digest of the entity-body for the purpose of providing an end-to-end message integrity check (MIC) of the entity-body.</p>
+	  <h3>CONTENT-RANGE</h3>
+	  <p>• is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</p>
+	  <h3>CONTENT-TYPE</h3>
+	  <p>• indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET.</p>
+	  <h3>EXPIRES</h3>
+	  <p>• Gives the date/time after which the response is considered stale.</p>
+	  <h3>LAST MODIFIES</h3>
+	  <p>• Last Modified indicates the date and time at which the origin server believes the variant was last modified.</p>
+	  </div>
+	  <br>
+	  
+	  <h1> HTTP Status Code</h1>
+	  <div class="box1">
+	  <h3>Informational (1xx)</h3>
+	  <ol>
+            <li> 100 Continue </li>
+            <li> 101 Switching Protocols </li>
+      </ol>
+	  <h3>Success (2xx)</h3>
+	  <ol>
+            <li> 200 OK </li>
+            <li> 202 Accepted </li>
+            <li> 203 Non-Authoritative Information </li>
+            <li> 204 No Content </li>
+            <li> 205 Reset Content </li>
+            <li> 206 Partial Content </li>
+      </ol>
+	  <h3>Redirection (3xx)</h3>
+	  <ol>
+            <li> 300 Multiple Choices </li>
+            <li> 301 Moved Permanently </li>
+            <li> 302 Found </li>
+            <li> 303 See Other </li>
+            <li> 304 Not Modified </li>
+            <li> 305 Use Proxy </li>
+            <li> 306 (Unused) </li>
+            <li> 307 Temporary Redirect </li>
+      </ol>
+	  <h3>Client Error (4xx)</h3>
+	  <ol>
+            <li> 400 Bad Request </li>
+            <li> 401 Unauthorized </li>
+            <li> 402 Payment Required </li>
+            <li> 403 Forbidden </li>
+            <li> 404 Not Found </li>
+            <li> 405 Method not Allowed </li>
+            <li> 406 Not Acceptable </li>
+           	<li> 407 Proxy Authentication Required </li>
+           	<li> 408 Request Timeout </li>
+          	<li> 409 Conflict </li>
+          	<li> 410 Gone </li>
+         	<li> 411 Length Required </li>
+        	<li> 412 Precondition Failed </li>
+			<li> 413 Request Entity Too Large </li>
+            <li> 414 Request-URI Too Long </li>
+            <li> 415 Unsupported Media Type </li>
+            <li> 416 Request Range Not Satisfiable </li>
+           	<li> 417 Expectation Failed </li>
+        	<li> 426 Upgrade Required </li>
+      </ol>
+	   <h3>Server Error (5xx)</h3>
+	  <ol>
+            <li> 500 Internal Server Error </li>
+            <li> 501 Not Implemented </li>
+            <li> 502 Bad Gateway </li>
+            <li> 503 Service Unavailable </li>
+            <li> 504 Gateway Timeout </li>
+            <li> 505 HTTP Version Not Supported </li>
+      </ol>
+	  </div>
+	  <br>
+	  
+  </div>
+</div>
+
+<div class="footer">
+  <h5>Copyright &copy; 2018 Course Subject (Webtech 2018) <br>All rights reserved.</h5>
+</div>
+
+</body>
+</html>
